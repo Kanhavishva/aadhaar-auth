@@ -24,13 +24,6 @@
  ******************************************************************************/
 package in.gov.uidai.auth.device.helper;
 
-import in.gov.uidai.auth.device.model.BFDDataFromDeviceToAUA;
-import in.gov.uidai.auth.device.model.SessionKeyDetails;
-import in.gov.uidai.auth.generic.helper.HashGenerator;
-import in.gov.uidai.authentication.common.types._1.Meta;
-import in.gov.uidai.authentication.uid_bfd_request._1.DataType;
-import in.gov.uidai.authentication.uid_bfd_request_data._1.Rbd;
-
 import java.io.StringWriter;
 import java.security.SecureRandom;
 import java.util.Arrays;
@@ -41,6 +34,13 @@ import java.util.UUID;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
+
+import in.gov.uidai.auth.device.model.BFDDataFromDeviceToAUA;
+import in.gov.uidai.auth.device.model.SessionKeyDetails;
+import in.gov.uidai.auth.generic.helper.HashGenerator;
+import in.gov.uidai.authentication.common.types._1.Meta;
+import in.gov.uidai.authentication.uid_bfd_request._1.DataType;
+import in.gov.uidai.authentication.uid_bfd_request_data._1.Rbd;
 
 /**
  * This class provides a method to collate all the data that needs to sent from BFD Client to BFD server.

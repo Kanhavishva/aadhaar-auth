@@ -24,15 +24,15 @@
  ******************************************************************************/
 package in.gov.uidai.auth.aua.helper;
 
-import in.gov.uidai.auth.device.model.OtpDataFromDeviceToAUA;
-import in.gov.uidai.authentication.otp._1.Opts;
-import in.gov.uidai.authentication.otp._1.Otp;
-import in.gov.uidai.authentication.uid_auth_request._1.Auth;
-
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import org.apache.commons.lang.StringUtils;
+
+import in.gov.uidai.auth.device.model.OtpDataFromDeviceToAUA;
+import in.gov.uidai.authentication.otp._1.Opts;
+import in.gov.uidai.authentication.otp._1.Otp;
+import in.gov.uidai.authentication.uid_auth_request._1.Auth;
 
 /**
  * This class provides a method to generate the Otp request object

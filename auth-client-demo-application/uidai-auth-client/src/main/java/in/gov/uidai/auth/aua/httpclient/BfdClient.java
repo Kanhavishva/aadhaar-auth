@@ -24,31 +24,11 @@
  ******************************************************************************/
 package in.gov.uidai.auth.aua.httpclient;
 
-import in.gov.uidai.auth.aua.helper.DigitalSigner;
-import in.gov.uidai.auth.device.model.AuthResponseDetails;
-import in.gov.uidai.auth.device.model.BfdResponseDetails;
-import in.gov.uidai.auth.device.model.OtpResponseDetails;
-import in.gov.uidai.authentication.otp._1.Otp;
-import in.gov.uidai.authentication.otp._1.OtpRes;
-import in.gov.uidai.authentication.uid_auth_request._1.Auth;
-import in.gov.uidai.authentication.uid_auth_response._1.AuthRes;
-import in.gov.uidai.authentication.uid_bfd_request._1.Bfd;
-import in.gov.uidai.authentication.uid_bfd_response._1.BfdRes;
-
 import java.io.StringReader;
 import java.io.StringWriter;
 import java.net.InetAddress;
 import java.net.URI;
-import java.security.KeyManagementException;
-import java.security.NoSuchAlgorithmException;
-import java.security.cert.CertificateException;
-import java.security.cert.X509Certificate;
 
-import javax.net.ssl.HostnameVerifier;
-import javax.net.ssl.SSLContext;
-import javax.net.ssl.SSLSession;
-import javax.net.ssl.TrustManager;
-import javax.net.ssl.X509TrustManager;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.JAXBException;
@@ -64,9 +44,12 @@ import org.xml.sax.helpers.XMLReaderFactory;
 
 import com.sun.jersey.api.client.Client;
 import com.sun.jersey.api.client.WebResource;
-import com.sun.jersey.api.client.config.ClientConfig;
-import com.sun.jersey.api.client.config.DefaultClientConfig;
-import com.sun.jersey.client.urlconnection.HTTPSProperties;
+
+import in.gov.uidai.auth.aua.helper.DigitalSigner;
+import in.gov.uidai.auth.device.model.BfdResponseDetails;
+import in.gov.uidai.authentication.uid_auth_response._1.AuthRes;
+import in.gov.uidai.authentication.uid_bfd_request._1.Bfd;
+import in.gov.uidai.authentication.uid_bfd_response._1.BfdRes;
 
 /**
  * <code>AuthClient</code> class can be used for submitting an Authentication request to

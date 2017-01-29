@@ -24,6 +24,38 @@
  ******************************************************************************/
 package in.gov.uidai.auth.sampleapp;
 
+import java.awt.Font;
+import java.awt.Image;
+import java.awt.Rectangle;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.net.URISyntaxException;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Properties;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+import javax.swing.ImageIcon;
+import javax.swing.InputVerifier;
+import javax.swing.JComponent;
+import javax.swing.JFileChooser;
+import javax.swing.JFormattedTextField;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPasswordField;
+import javax.swing.UIManager;
+import javax.swing.filechooser.FileFilter;
+import javax.swing.filechooser.FileNameExtensionFilter;
+
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.lang.StringUtils;
+
 import in.gov.uidai.auth.aua.helper.AuthRequestCreator;
 import in.gov.uidai.auth.aua.helper.AuthResponseValidator;
 import in.gov.uidai.auth.aua.helper.AuthResponseValidator.ValidationResult;
@@ -69,38 +101,6 @@ import in.gov.uidai.authentication.uid_bfd_request._1.Bfd;
 import in.gov.uidai.authentication.uid_bfd_response._1.BfdRes;
 import in.gov.uidai.authentication.uid_bfd_response._1.Rank;
 import in.gov.uidai.authentication.uid_bfd_response._1.Ranks;
-
-import java.awt.Font;
-import java.awt.Image;
-import java.awt.Rectangle;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.net.URISyntaxException;
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Properties;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
-import javax.swing.ImageIcon;
-import javax.swing.InputVerifier;
-import javax.swing.JComponent;
-import javax.swing.JFileChooser;
-import javax.swing.JFormattedTextField;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JPasswordField;
-import javax.swing.UIManager;
-import javax.swing.filechooser.FileFilter;
-import javax.swing.filechooser.FileNameExtensionFilter;
-
-import org.apache.commons.io.FileUtils;
-import org.apache.commons.lang.StringUtils;
 
 public class SampleClientMainFrame extends javax.swing.JFrame {
 

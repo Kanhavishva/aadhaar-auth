@@ -24,11 +24,11 @@
  ******************************************************************************/
 package in.gov.uidai.auth.device.model;
 
-import in.gov.uidai.authentication.common.types._1.FingerPosition;
-import in.gov.uidai.authentication.common.types._1.Meta;
-
 import java.io.Serializable;
 import java.util.List;
+
+import in.gov.uidai.authentication.common.types._1.FingerPosition;
+import in.gov.uidai.authentication.common.types._1.Meta;
 
 /**
  * 

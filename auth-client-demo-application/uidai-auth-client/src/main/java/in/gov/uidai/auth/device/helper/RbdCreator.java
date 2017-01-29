@@ -24,6 +24,12 @@
  ******************************************************************************/
 package in.gov.uidai.auth.device.helper;
 
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
+import com.google.protobuf.ByteString;
+import com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl;
+
 import in.gov.uidai.auth.device.model.DeviceCollectedBfdData;
 import in.gov.uidai.authentication.uid_bfd_request_data._1.BfdBio;
 import in.gov.uidai.authentication.uid_bfd_request_data._1.BfdBios;
@@ -31,12 +37,6 @@ import in.gov.uidai.authentication.uid_bfd_request_data._1.Rbd;
 import in.gov.uidai.bfdserver.protobuf.Bfd;
 import in.gov.uidai.bfdserver.protobuf.Bfd.FingerPosition;
 import in.gov.uidai.bfdserver.protobuf.Bfd.Rbd.Builder;
-
-import java.util.Calendar;
-import java.util.GregorianCalendar;
-
-import com.google.protobuf.ByteString;
-import com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl;
 
 /**
  * This class provides utility method to create Rbd object using data that was collected by the BFD Device

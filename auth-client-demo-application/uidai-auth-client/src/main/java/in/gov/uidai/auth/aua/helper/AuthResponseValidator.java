@@ -24,15 +24,15 @@
  ******************************************************************************/
 package in.gov.uidai.auth.aua.helper;
 
-import in.gov.uidai.auth.generic.helper.HashGenerator;
-import in.gov.uidai.authentication.uid_auth_request._1.Auth;
-import in.gov.uidai.authentication.uid_auth_request._1.DataType;
-import in.gov.uidai.authentication.uid_auth_response._1.AuthRes;
-
 import java.util.Date;
 
 import org.apache.commons.lang.StringUtils;
 import org.bouncycastle.util.encoders.Hex;
+
+import in.gov.uidai.auth.generic.helper.HashGenerator;
+import in.gov.uidai.authentication.uid_auth_request._1.Auth;
+import in.gov.uidai.authentication.uid_auth_request._1.DataType;
+import in.gov.uidai.authentication.uid_auth_response._1.AuthRes;
 
 /**
  * Helper class to validate the authentication response by validating the following:

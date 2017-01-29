@@ -24,17 +24,14 @@
  ******************************************************************************/
 package in.gov.uidai.auth.aua.helper;
 
-import in.gov.uidai.auth.device.model.BFDDataFromDeviceToAUA;
-import in.gov.uidai.authentication.common.types._1.Meta;
-import in.gov.uidai.authentication.uid_auth_request._1.Uses;
-import in.gov.uidai.authentication.uid_bfd_request._1.Bfd;
-import in.gov.uidai.authentication.uid_bfd_request._1.Bfd.Data;
-import in.gov.uidai.authentication.uid_bfd_request._1.Skey;
-
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import org.apache.commons.lang.StringUtils;
+import in.gov.uidai.auth.device.model.BFDDataFromDeviceToAUA;
+import in.gov.uidai.authentication.common.types._1.Meta;
+import in.gov.uidai.authentication.uid_bfd_request._1.Bfd;
+import in.gov.uidai.authentication.uid_bfd_request._1.Bfd.Data;
+import in.gov.uidai.authentication.uid_bfd_request._1.Skey;
 
 /**
  * <code>AuthRequestCreator</code> class provides a method to generate the <code>Auth</code> object

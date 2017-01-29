@@ -24,6 +24,9 @@
  ******************************************************************************/
 package in.gov.uidai.auth.aua.helper;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import in.gov.uidai.auth.device.model.AuthDataFromDeviceToAUA;
 import in.gov.uidai.authentication.common.types._1.Meta;
 import in.gov.uidai.authentication.uid_auth_request._1.Auth;
@@ -31,11 +34,6 @@ import in.gov.uidai.authentication.uid_auth_request._1.Auth.Data;
 import in.gov.uidai.authentication.uid_auth_request._1.Skey;
 import in.gov.uidai.authentication.uid_auth_request._1.Tkn;
 import in.gov.uidai.authentication.uid_auth_request._1.Uses;
-
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
-import org.apache.commons.lang.StringUtils;
 
 /**
  * <code>AuthRequestCreator</code> class provides a method to generate the <code>Auth</code> object

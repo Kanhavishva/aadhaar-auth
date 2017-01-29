@@ -24,13 +24,20 @@
  ******************************************************************************/
 package in.gov.uidai.auth.device.helper;
 
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
+import org.apache.commons.lang.StringUtils;
+
+import com.google.protobuf.ByteString;
+import com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl;
+
 import in.gov.uidai.auth.device.model.DeviceCollectedAuthData;
 import in.gov.uidai.auth.device.model.DeviceCollectedAuthData.BiometricData;
 import in.gov.uidai.authentication.uid_auth_request_data._1.Bio;
 import in.gov.uidai.authentication.uid_auth_request_data._1.Bios;
 import in.gov.uidai.authentication.uid_auth_request_data._1.Demo;
 import in.gov.uidai.authentication.uid_auth_request_data._1.Gender;
-import in.gov.uidai.authentication.uid_auth_request_data._1.MatchingStrategy;
 import in.gov.uidai.authentication.uid_auth_request_data._1.Pa;
 import in.gov.uidai.authentication.uid_auth_request_data._1.Pfa;
 import in.gov.uidai.authentication.uid_auth_request_data._1.Pi;
@@ -39,16 +46,6 @@ import in.gov.uidai.authentication.uid_auth_request_data._1.Pv;
 import in.gov.uidai.authserver.protobuf.Auth;
 import in.gov.uidai.authserver.protobuf.Auth.LangCode;
 import in.gov.uidai.authserver.protobuf.Auth.Position;
-
-import java.util.Calendar;
-import java.util.GregorianCalendar;
-
-import javax.annotation.Resource.AuthenticationType;
-
-import org.apache.commons.lang.StringUtils;
-
-import com.google.protobuf.ByteString;
-import com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl;
 
 /**
  * This class provides utility method to create Pid object using data that was collected by the Auth Device

@@ -24,14 +24,14 @@
  ******************************************************************************/
 package in.gov.uidai.auth.device.model;
 
+import java.io.Serializable;
+import java.util.List;
+
 import in.gov.uidai.authentication.common.types._1.Meta;
 import in.gov.uidai.authentication.uid_auth_request._1.DataType;
 import in.gov.uidai.authentication.uid_auth_request_data._1.BioMetricType;
 import in.gov.uidai.authentication.uid_auth_request_data._1.BiometricPosition;
 import in.gov.uidai.authentication.uid_auth_request_data._1.MatchingStrategy;
-
-import java.io.Serializable;
-import java.util.List;
 
 /**
  * 

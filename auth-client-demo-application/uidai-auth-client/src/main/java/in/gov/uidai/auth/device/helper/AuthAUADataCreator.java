@@ -24,13 +24,6 @@ R * DISCLAIMER: The sample code or utility or tool described herein
  ******************************************************************************/
 package in.gov.uidai.auth.device.helper;
 
-import in.gov.uidai.auth.device.model.AuthDataFromDeviceToAUA;
-import in.gov.uidai.auth.device.model.SessionKeyDetails;
-import in.gov.uidai.auth.generic.helper.HashGenerator;
-import in.gov.uidai.authentication.common.types._1.Meta;
-import in.gov.uidai.authentication.uid_auth_request._1.DataType;
-import in.gov.uidai.authentication.uid_auth_request_data._1.Pid;
-
 import java.io.StringWriter;
 import java.security.SecureRandom;
 import java.util.Arrays;
@@ -44,6 +37,13 @@ import javax.xml.bind.JAXBException;
 
 import org.apache.commons.codec.binary.Hex;
 import org.apache.commons.lang.StringUtils;
+
+import in.gov.uidai.auth.device.model.AuthDataFromDeviceToAUA;
+import in.gov.uidai.auth.device.model.SessionKeyDetails;
+import in.gov.uidai.auth.generic.helper.HashGenerator;
+import in.gov.uidai.authentication.common.types._1.Meta;
+import in.gov.uidai.authentication.uid_auth_request._1.DataType;
+import in.gov.uidai.authentication.uid_auth_request_data._1.Pid;
 
 /**
  * This class provides a method to collate all the data that needs to sent from Auth Client to AUA server.
