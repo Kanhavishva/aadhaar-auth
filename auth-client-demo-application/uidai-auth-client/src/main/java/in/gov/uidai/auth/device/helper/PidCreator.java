@@ -1,5 +1,5 @@
 /*******************************************************************************
- * DISCLAIMER: The sample code or utility or tool described herein
+O * DISCLAIMER: The sample code or utility or tool described herein
  *    is provided on an "as is" basis, without warranty of any kind.
  *    UIDAI does not warrant or guarantee the individual success
  *    developers may have in implementing the sample code on their
@@ -54,6 +54,7 @@ import in.gov.uidai.authserver.protobuf.Auth.Position;
  * @author UIDAI
  * 
  */
+@SuppressWarnings("restriction")
 public class PidCreator {
 
 	public static Pid createXmlPid(DeviceCollectedAuthData data) {

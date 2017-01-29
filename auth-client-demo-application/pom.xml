@@ -30,6 +30,7 @@
 		<module>uidai-auth-client</module>
 		<module>uidai-sample-gui-app</module>
 	</modules>
+	
 
 	<build>
 		<plugins>
@@ -52,7 +53,6 @@
 					</execution>
 				</executions>
 			</plugin>
-			
 		</plugins>
 	</build>
 </project>

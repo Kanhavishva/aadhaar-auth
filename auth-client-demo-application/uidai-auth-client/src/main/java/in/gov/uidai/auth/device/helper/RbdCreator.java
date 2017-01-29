@@ -45,6 +45,7 @@ import in.gov.uidai.bfdserver.protobuf.Bfd.Rbd.Builder;
  * @author UIDAI
  * 
  */
+@SuppressWarnings("restriction")
 public class RbdCreator {
 
 	public static Rbd createXmlRbd(DeviceCollectedBfdData data) {
@@ -84,6 +85,7 @@ public class RbdCreator {
 	}
 
 
+	
 	public static in.gov.uidai.bfdserver.protobuf.Bfd.Rbd createProtoRbd( DeviceCollectedBfdData data) {
 
 		Builder rbdBuilder = Bfd.Rbd.newBuilder();		

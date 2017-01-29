@@ -1014,7 +1014,7 @@ public final class Bfd {
       
       public in.gov.uidai.bfdserver.protobuf.Bfd.BfdBios buildPartial() {
         in.gov.uidai.bfdserver.protobuf.Bfd.BfdBios result = new in.gov.uidai.bfdserver.protobuf.Bfd.BfdBios(this);
-        int from_bitField0_ = bitField0_;
+        //int from_bitField0_ = bitField0_;
         if (bioBuilder_ == null) {
           if (((bitField0_ & 0x00000001) == 0x00000001)) {
             bio_ = java.util.Collections.unmodifiableList(bio_);

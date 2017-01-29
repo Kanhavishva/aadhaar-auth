@@ -158,11 +158,10 @@ public class DigitalSigner {
 
 	}
 	
-	@SuppressWarnings("unchecked")
 	private KeyInfo getKeyInfo(X509Certificate cert, XMLSignatureFactory fac) {
 		// Create the KeyInfo containing the X509Data.
 		KeyInfoFactory kif = fac.getKeyInfoFactory();
-		List x509Content = new ArrayList();
+		List<Object> x509Content = new ArrayList<Object>();
 		x509Content.add(cert.getSubjectX500Principal().getName());
 		x509Content.add(cert);
 		X509Data xd = kif.newX509Data(x509Content);

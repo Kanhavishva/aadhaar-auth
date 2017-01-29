@@ -6163,7 +6163,7 @@ public final class Auth {
       
       public in.gov.uidai.authserver.protobuf.Auth.Bios buildPartial() {
         in.gov.uidai.authserver.protobuf.Auth.Bios result = new in.gov.uidai.authserver.protobuf.Auth.Bios(this);
-        int from_bitField0_ = bitField0_;
+        //int from_bitField0_ = bitField0_;
         if (bioBuilder_ == null) {
           if (((bitField0_ & 0x00000001) == 0x00000001)) {
             bio_ = java.util.Collections.unmodifiableList(bio_);

@@ -99,7 +99,7 @@ public class OtpClient {
 	private String generateSignedOtpXML(Otp otp) throws JAXBException, Exception {
 		StringWriter otpXML = new StringWriter();
 
-		JAXBElement element = new JAXBElement(new QName(
+		JAXBElement<Otp> element = new JAXBElement<Otp>(new QName(
 				"http://www.uidai.gov.in/authentication/otp/1.0", "Otp"), Otp.class, otp);
 
 		JAXBContext.newInstance(Otp.class).createMarshaller().marshal(element, otpXML);

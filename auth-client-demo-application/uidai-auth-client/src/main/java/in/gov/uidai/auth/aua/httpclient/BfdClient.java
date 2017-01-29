@@ -110,7 +110,7 @@ public class BfdClient {
 	private String generateSignedBfdXML(Bfd bfd) throws JAXBException, Exception {
 		StringWriter bfdXML = new StringWriter();
 
-		JAXBElement bfdElement = new JAXBElement(new QName(
+		JAXBElement<Bfd> bfdElement = new JAXBElement<Bfd>(new QName(
 				"http://www.uidai.gov.in/authentication/uid-bfd-request/1.0", "Bfd"), Bfd.class, bfd);
 		
 		JAXBContext.newInstance(Bfd.class).createMarshaller().marshal(bfdElement, bfdXML);

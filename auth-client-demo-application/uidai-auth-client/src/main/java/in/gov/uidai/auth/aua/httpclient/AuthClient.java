@@ -116,7 +116,7 @@ public class AuthClient {
 	private String generateSignedAuthXML(Auth auth) throws JAXBException, Exception {
 		StringWriter authXML = new StringWriter();
 
-		JAXBElement authElement = new JAXBElement(new QName(
+		JAXBElement<Auth> authElement = new JAXBElement<Auth>(new QName(
 				"http://www.uidai.gov.in/authentication/uid-auth-request/1.0", "Auth"), Auth.class, auth);
 
 		JAXBContext.newInstance(Auth.class).createMarshaller().marshal(authElement, authXML);
